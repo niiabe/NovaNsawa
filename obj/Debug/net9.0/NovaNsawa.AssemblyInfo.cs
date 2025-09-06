@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NovaNsawa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa25ecd9b00ba448078b088849ef47fabf1b7539")]
 [assembly: System.Reflection.AssemblyProductAttribute("NovaNsawa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NovaNsawa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

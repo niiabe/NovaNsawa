@@ -59,3 +59,4 @@ C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\refint\NovaNsawa.d
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.pdb
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.genruntimeconfig.cache
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\ref\NovaNsawa.dll
+C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.sourcelink.json
