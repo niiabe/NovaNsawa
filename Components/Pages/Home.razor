@@ -1,7 +1,8 @@
 ﻿@page "/"
 @using Microsoft.AspNetCore.Components.Forms
 @using NovaNsawa.Models
-@* @using NovaNsawa.Services *@
+@using NovaNsawa.Services
+@rendermode InteractiveServer
 
  <!--==========================
     Header
@@ -743,7 +744,7 @@
         </div>
 
         <div class="form">
-          <EditForm Model="contactForm" OnValidSubmit="HandleContactForm" role="form" class="contactForm" id="contactForm">
+          <EditForm Model="contactForm" OnValidSubmit="HandleContactForm" FormName="ContactForm" role="form" class="contactForm" id="contactForm">
             <DataAnnotationsValidator />
     
     <div class="form-row">
@@ -1057,6 +1058,48 @@
   </script>
 </div>
 <!-- End WhatsApp Widget -->
+
+
+@* code *@
+@code {
+    [Inject] private EmailService EmailService { get; set; } = default!;
+    
+    private ContactFormModel contactForm = new();
+    private bool isSubmitting = false;
+    private string statusMessage = "";
+    private bool isSuccess = false;
+
+    private async Task HandleContactForm()
+    {
+        isSubmitting = true;
+        statusMessage = "";
+        StateHasChanged(); // Update UI to show "Sending..." button
+        
+        try
+        {
+            await EmailService.SendContactEmailsAsync(contactForm);
+            
+            statusMessage = "Thank you! Your message has been sent successfully.";
+            isSuccess = true;
+            
+            // Reset form
+            contactForm = new ContactFormModel();
+        }
+        catch (Exception ex)
+        {
+            // Log the actual error for debugging (optional)
+            Console.WriteLine($"Email error: {ex.Message}");
+            
+            statusMessage = "Sorry, there was an error sending your message. Please try again.";
+            isSuccess = false;
+        }
+        finally
+        {
+            isSubmitting = false;
+            StateHasChanged(); // Update UI to remove "Sending..." state
+        }
+    }
+}
 
 
 
