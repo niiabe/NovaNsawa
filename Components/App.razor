@@ -1,51 +1,134 @@
-﻿<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>Nova Nsawa - Funeral Donation Platform in Ghana</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="Nova Nsawa is a user-friendly platform for managing funeral donations in Ghana, offering an easy and dignified way to handle collections, announcements, and tracking.">
-  <meta name="keywords" content="Ghana,Nsawa, funeral, donations, funeral services, funeral planning, funeral announcements, funeral collections, online donations, Nova Nsawa">
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+
+    @* Nsawa meta/head *@
+  <!-- Basic Meta Tags -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Title and Description -->
+  <title>Nova Nsawa - Ghana's Leading Funeral Donation Platform | Manage Collections Easily</title>
+  <meta name="description" content="Nova Nsawa is Ghana's trusted funeral donation platform. Easily manage cash, mobile money, and card collections with real-time tracking. Free for cash donations. Download our app today! Start simplifying funeral donations now.">
+  <meta name="keywords" content="Ghana funeral donations, Nova Nsawa, funeral collection platform, Ghana mobile money donations, funeral management Ghana, online funeral donations, funeral app Ghana, Nsawa platform, Ghana funeral services, funeral contribution tracking">
   <meta name="author" content="FnF ICT Solutions">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Nova Nsawa - Funeral Donation Platform in Ghana">
-  <meta property="og:description" content="A user-friendly platform for managing funeral donations in Ghana, offering an easy and dignified way to handle collections, announcements, and tracking.">
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Nova Nsawa - Ghana's Leading Funeral Donation Platform">
+  <meta property="og:description" content="Trusted by thousands of Ghanaian families. Manage funeral donations through cash, mobile money, and cards with complete transparency. Free for cash collections.">
   <meta property="og:image" content="images/logo.png">
-  <meta property="og:url" content="https://nsawa.vercel.app">
+  <meta property="og:image:alt" content="Nova Nsawa Logo - Funeral Donation Platform">
+  <meta property="og:url" content="https://nsawa.vercel.app">  <!--// Replace with your actual URL-->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nova Nsawa">
+  <meta property="og:locale" content="en_GH">
 
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nova Nsawa - Ghana's Leading Funeral Donation Platform">
+  <meta name="twitter:description" content="Manage funeral donations easily with Ghana's most trusted platform. Free for cash collections.">
+  <meta name="twitter:image" content="images/logo.png">
+  <meta name="twitter:image:alt" content="Nova Nsawa Logo">
 
   <!-- Favicons -->
-  <link href="images/logo.png" rel="icon">
-  <link href="images/logo.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+  <link rel="shortcut icon" href="images/logo.png">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <!-- DNS Prefetch for Performance -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//unpkg.com">
 
-  <!-- Bootstrap CSS File -->
+  <!-- Preconnect for Critical Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts with Performance Optimization -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  <!-- Critical CSS Files -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/animate.min.css" rel="stylesheet">
-  <link href="css/ionicons.min.css" rel="stylesheet">
-  <link href="css/owl.carousel.min.css" rel="stylesheet">
-  <link href="css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <ImportMap/>
+  <!-- Non-Critical CSS Files with Preload -->
+  <link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/ionicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/lightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </noscript>
+
+  <!-- Ionicons Scripts with Performance Optimization -->
+  <link rel="modulepreload" href="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@@context": "https://schema.org",
+    "@@type": "WebApplication",
+    "name": "Nova Nsawa",
+    "description": "Ghana's leading funeral donation platform for managing cash, mobile money, and card collections",
+    "url": "https://nsawa.vercel.app",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Android, iOS, Web",
+    "offers": {
+      "@@type": "Offer",
+      "price": "0",
+      "priceCurrency": "GHS",
+      "description": "Free for cash collections"
+    },
+    "creator": {
+      "@@type": "Organization",
+      "name": "FnF ICT Solutions"
+    },
+    "serviceArea": {
+      "@@type": "Country",
+      "name": "Ghana"
+    }
+  }
+  </script>
+
+  <!-- Theme Color for Mobile Browsers -->
+  <meta name="theme-color" content="#2c3e50">
+  <meta name="msapplication-TileColor" content="#2c3e50">
+
+  <!-- Performance Hint -->
+  <meta name="format-detection" content="telephone=no">
+    @* end of Nsawa meta head *@
+   
+    <ImportMap />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <HeadOutlet />
 </head>
 
 <body>
     <Routes />
-    <script src="_framework/blazor.web.js"></script>
-    
-  <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
 
-  <!-- JavaScript Libraries -->
+
+
+
+    @* Nsawa scripts *@
+
+      <!-- JavaScript Libraries -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -59,15 +142,22 @@
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/lightbox.min.js"></script>
   <script src="js/jquery.touchSwipe.min.js"></script>
-  @* <!-- Contact Form JavaScript File -->
-  <script src="js/contactform.js"></script> *@
+  <!-- Contact Form JavaScript File -->
+  <script src="js/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  @* <script src="js/firebase-app.js"></script> *@
-  @* <script src="js/contact.js"></script> *@
+  <script src="js/firebase-app.js"></script>
+  <script src="js/contact.js"></script>
   <script src="js/main.js"></script>
-  @* <script src="js/firebase-analytics.js">firebase.analytics();</script> *@
+  <script src="js/firebase-analytics.js">firebase.analytics();</script>
 
+  <!-- initialize tool tip -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+    @* end of Nsawa scripts *@
 </body>
 
 </html>

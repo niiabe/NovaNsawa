@@ -13,6 +13,7 @@ C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.Assembly
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.AssemblyInfo.cs
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.csproj.CoreCompileInputs.cache
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.sourcelink.json
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
@@ -23,13 +24,10 @@ C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\7wflztq
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\r04dpktquk-0fypqvflig.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\st7r9nbbh7-um2978uh2c.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\vc3t0yqq9n-g9uxx9vyfw.gz
-C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\imknt4tto6-oljv5n0lly.gz
+C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\imknt4tto6-9gnckt34qa.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\4gq79nh9st-dosqy3kf6t.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\fzbrjmpf7i-agxwj113w5.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\0imruy3dt9-lr93ulwulo.gz
-C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\5fnpzdka9q-wag5l071tm.gz
-C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\i4oi39kpjb-p1icf5zw63.gz
-C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\zhdgzg75xk-r1hye14rqe.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\k330u5fsw1-s1z0o21rrk.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\uf89i9a79h-2sqxa0diqn.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\d9at6zy9re-75v7d51hf1.gz
@@ -44,12 +42,10 @@ C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\65c7lrb
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\0n4oaw7uk6-9lttt2u92p.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\czva65umn1-uydiqv09h2.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\3glv36k8k1-v5kyrhpytd.gz
-C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\rwifn80dbt-9uofrwxvcv.gz
-C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\t5ienvdoou-pmen0o8lfo.gz
+C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\t5ienvdoou-5jjpyx768a.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\h2cbam3hip-72fhsa7i9f.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\1fxw3xdp03-swgq9j9a73.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\y2v5bh6v54-pqnv15ld6a.gz
-C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\compressed\q9296ehoio-m4hmoj0gdx.gz
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\staticwebassets.development.json
@@ -59,4 +55,3 @@ C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\refint\NovaNsawa.d
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.pdb
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.genruntimeconfig.cache
 C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\ref\NovaNsawa.dll
-C:\Users\F&F_ICT\Desktop\me\MyGits\NovaNsawa\obj\Debug\net9.0\NovaNsawa.sourcelink.json

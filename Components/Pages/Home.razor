@@ -1,27 +1,29 @@
 ﻿@page "/"
 @using Microsoft.AspNetCore.Components.Forms
-@using NovaNsawa.Models
-@using NovaNsawa.Services
 @rendermode InteractiveServer
 
- <!--==========================
+
+  <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container-fluid">
 
-      <div id="logo" class="pull-left">
+      <div id="logo" class="pull-left" >
         <!-- <h1><a href="#intro" class="scrollto">NSAWA</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="#intro"><img src="images/logo.png" id="logo-img" alt="Nova Nsawa Logo" title="NSAWA Logo" style="width: 50px; height: 100%;" /></a>
-        <a href="#intro"><img src="images/novaTextLogo.jpg" alt="Nova Nsawa Text Logo" title="NSAWA Logo" style="width: 150px; height: 50px;" /></a>
+        <a href="#intro"><img src="images/logo.png" id="logo-img" alt="Nova Nsawa Logo" title="NSAWA Logo" style="width: 50px; height: 50%;" /></a>
+        <!-- <a href="#intro"><img src="images/logotext.png" alt="Nova Nsawa Text Logo" title="NSAWA Logo" style="width: 50%; height: 50px;" /></a>         -->
+        <!-- <a href="#intro"><img src="images/nsawalogo.png" alt="Nova Nsawa Text Logo" title="NSAWA Logo" style="width: 100px; height: 50px;" /></a> -->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Features</a></li>          
+          <li><a href="#packages">Packages</a></li>          
+          <li><a href="#features">Features</a></li>                             
+          <li><a href="#">Login </a></li>                   
+          <li><a href="#" >Sign up </a></li>        
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -33,7 +35,7 @@
   ============================-->
   <section id="intro">
     <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel" >
 
         <ol class="carousel-indicators"></ol>
 
@@ -41,11 +43,11 @@
 
           <div class="carousel-item active">
 
-            <div class="carousel-background"><img src="images/2-bg.jpg" alt="Funeral donations being received"></div>
+            <div class="carousel-background"><img src="images/fnrposjpeg-03.jpg" alt="Funeral donations being received" class="wow fadeInDown"></div>
 
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Receive Donations</h2>
+                <h2 class="wow fadeInUp">Receive Donations</h2>
                <!-- <p>We provide an efficient platform where you accept your donations.</p> -->
                <a href="#contact" class="btn-get-started scrollto">Get Started</a>
               </div>
@@ -54,13 +56,11 @@
 
           <div class="carousel-item">
 
-            <div class="carousel-background"><img src="images/7.jpg" alt="Funeral announcement being made"></div>
-
-           
+            <div class="carousel-background"><img src="images/family.jpg" alt="Funeral announcement being made"></div>           
 
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Announce the passing of your love one</h2>
+                <h2 class="wow fadeInUp">Announce the passing of your loved one</h2>
                <!-- <p>Our method of operation is simple and professionally handled. </p>
                --> <a href="#contact" class="btn-get-started scrollto">Get Started</a>
               </div>
@@ -71,7 +71,7 @@
             <div class="carousel-background"><img src="images/3.jpg" alt="Easy receival process for funeral donations"></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Easy receival process, no hassle</h2>
+                <h2 class="wow fadeInUp">Easy Donation process</h2>
                <!-- <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
                --> <a href="#contact" class="btn-get-started scrollto">Get Started</a>
               </div>
@@ -82,23 +82,23 @@
             <div class="carousel-background"><img src="images/1.jpg" alt="Assistance for funeral planning"></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Get the needed assistance</h2>
+                <h2 class="wow fadeInUp">Get the needed assistance</h2>
                <!-- <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
                --> <a href="#contact" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <div class="carousel-background"><img src="images/9_Hero.jpg" alt="Tracking funeral donations"></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>Track Donations</h2>
-               <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               --> <a href="#contact" class="btn-get-started scrollto">Get Started</a>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="#contact" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -119,150 +119,316 @@
   <main id="main">
 
     <!--==========================
-      Featured Services Section
+      Featured features Section
     ============================-->
-    <section id="featured-services">
+    <section id="featured-features">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-4 box">
             <i class="ion-pie-graph" style="color: #fff;"></i>
             <h4 class="title"><a href="">Comprehensive</a></h4>
-            <p class="description">Easily track donations made to your funerals.</p>
+            <p class="description">Track every donation with detailed analytics and real-time reporting for complete transparency.</p>
           </div>
 
           <div class="col-lg-4 box box-bg">
             <i class="ion-ios-stopwatch-outline" style="color: #fff;"></i>
             <h4 class="title"><a href="">Efficient</a></h4>
-            <p class="description">Our platform works flawlessly to ease up your work in your time of grieving.</p>
+            <p class="description">Streamline funeral donation management so you can focus on what matters most during difficult times.</p>
           </div>
 
           <div class="col-lg-4 box">
             <i class="ion-earth" style="color: #fff;"></i>
             <h4 class="title"><a href="">Worldwide</a></h4>
-            <p class="description">Receive donations from all over the world with multiple payment types. </p>
+            <p class="description">Accept donations from anywhere in the world through cash, mobile money, and international card payments.</p>
           </div>
 
         </div>
       </div>
-    </section><!-- #featured-services -->
+    </section><!-- #featured-features -->
+
+
+
+    <!-- About -->
+      <section id="skills">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-6 order-2 order-md-1 wow fadeInUp " data-wow-delay="0.2s" style="position: relative; width: 100%; height: 100%;  padding: 200px; overflow: hidden;">
+                      <!-- <iframe src="https://www.youtube.com/embed/KLM0Gmij1UU?autoplay=1" 
+                              title="Canva for Beginners: Remake Pepsodent Poster AD with Canva" 
+                              frameborder="0" 
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                              referrerpolicy="strict-origin-when-cross-origin" 
+                              allowfullscreen
+                              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+                      </iframe> -->
+                      <!-- image replacement -->
+                       <img src="images/aboutApp.jpg" alt="About Nova Nsawa" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2 wow fadeInDown" data-wow-delay="0.2s">
+                        <div class="section-title ml-lg-5">
+                          <header class="section-header mb-3">                            
+                            <h3>Nova Nsawa - Ghana's Leading Funeral Donation Platform</h3>
+                          </header>
+                            <h4 class="title mb-4 text-center">Simplify funeral donations with Ghana's most trusted platform</h4>
+                            <p class=" mb-0">Nova Nsawa revolutionizes how families manage funeral donations in Ghana. Our secure platform handles cash, mobile money, and card donations seamlessly, providing complete transparency and peace of mind during your time of loss. Join thousands of families who trust Nova Nsawa.</p>
+                            
+                            <div class="row mt-4 pt-2">
+                                
+                                
+                                <div class="col-lg-6 ">
+                                    <div class="media  align-items-center rounded p-3 justify-content-center" >     
+                                          <a class="cta-btn icon text-nowrap" href="#call-to-action" target="_blank" rel="noopener noreferrer" aria-label="Download my app on Android from the Google Play Store">
+                                              <ion-icon name="phone-portrait-outline"></ion-icon> &nbsp; Get App
+                                          </a>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6   ">
+                                    <div class="media align-items-center rounded  p-3 justify-content-center">   
+                                      <a class="cta-btn icon text-nowrap" href="#" target="_blank" rel="noopener noreferrer" aria-label="Join for free to use our platform">
+                                          <ion-icon name="person-add-outline"></ion-icon> &nbsp; Sign Up For Free
+                                      </a>
+
+                                    </div>
+                                </div>
+
+
+
+                                
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--enr row-->
+            </div><!--end container-->
+        </section>
+        <!-- End About -->
+
 
     <!--==========================
-      About Us Section
+      packages Us Section
     ============================-->
-    <section id="about">
+    <section id="packages" style="background-color: #282828c2;">
       <div class="container">
 
         <header class="section-header">
-          <h3>About Us</h3>
-            Nsawa is a platform designed to help individuals and families manage funeral donations with ease. We understand that planning a funeral can be a challenging and emotional time, which is why we have created a user-friendly platform to simplify the process of collecting and managing donations.
-        </header>
-
-        <div class="row about-cols">
-
-          <div class="col-md-4 wow fadeInUp">
-            <div class="about-col">
-              <div class="img">
-                <img src="images/horn.jpg" style="height: 100%;" alt="Our Mission at Nova Nsawa" class="img-fluid">
-                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Mission</a></h2>
-              <p>
-                Our mission is to provide a comprehensive and user-friendly service that simplifies the process of collecting and tracking donations for funerals.      
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="about-col">
-              <div class="img">
-                <img src="images/greet.jpg" style="height: 100%;" alt="Our Plan at Nova Nsawa" class="img-fluid">
-                <div class="icon"><i class="ion-ios-list-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Plan</a></h2>
-              <p>
-                We plan to achieve our mission by offering a secure and reliable platform that allows users to create personalized donation pages, share them with their network, and track donations in real-time.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="about-col">
-              <div class="img ">
-                <img src="images/dance.jpg" style="height: 100%;" alt="Our Vision at Nova Nsawa" class="img-fluid">
-                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
-              </div>
-              <h2 class="title" ><a href="#">Our Vision</a></h2>
-              <p>
-                Our vision is to become the leading platform for managing funeral donations, known for our ease of use, reliability, and exceptional customer service.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #about -->
-
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="services">
-      <div class="container">
-
-        <header class="section-header wow fadeInUp">
-          <h3>Features</h3>
+          <h3>Choose Your Package</h3>
           <p>
-            We provide a comprehensive platform to help you manage your funeral donations with ease.
+            Select the perfect plan for your needs - from self-managed to full-service support during your difficult time.
           </p>
         </header>
 
-        <div class="row">
+        <div class="row packages-cols">
+
+<!-- Nova Green Package -->
+  <div class="col-md-6 wow fadeInUp">
+    <div class="packages-col">
+      <div class="img">
+        <img src="images/horn.jpg" style="height: 100%;" alt="Green Package - Self Service" class="img-fluid">
+        <div class="icon"><i class="ion-ios-checkmark-outline" style="color: rgba(14, 131, 30, 0.935);"></i></div>
+      </div>
+      <h2 class="title"><a href="#">Nsawa Green</a></h2>
+      <p>
+        <strong>Self Managed Service </strong><br>
+        Take full control of your donation management with our user-friendly platform. Ideal for those who prefer a hands-on approach.
+        <ul>
+          <li>Completely FREE for cash collections</li>
+          <li>Full access to all platform features</li>
+          <li>Self-managed cash, mobile money, and card collections</li>
+          <li>1% fee on mobile money -capped at GH₵50</li>
+          <li>4% fee on card transactions</li>
+          <li>24/7 platform access and real-time tracking</li>
+        </ul>
+        <!-- <i class="btn m-0 p-3 text-monospace text-reset" data-toggle="modal" data-target="#NsawaGreenModal">Terms & Conditions Apply</i> -->
+        <i class="btn p-3 text-monospace text-reset" data-toggle="tooltip" data-html="true" data-placement="right" title="This is terms and conditions.">Terms & Conditions Apply</i>
+      </p>
+    </div>
+  </div>
+
+  <!-- Nova Red Package -->
+  <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="packages-col">
+      <div class="img">
+        <img src="images/dance.jpg" style="height: 100%;" alt="Red Package - Fully Managed" class="img-fluid">
+        <div class="icon"><i class="ion-ios-settings" style="color: rgb(216, 19, 19);"></i></div>
+      </div>
+      <h2 class="title"><a href="#">Nsawa Red</a></h2>
+      <p>
+        <strong>Complete White-Glove Service</strong><br>
+        Let our professional team handle everything while you focus on your family and funeral arrangements.
+        <ul>
+          <li>We handle everything for you</li>
+          <li>Live monitoring of all transactions</li>
+          <li>Professional team manages ALL collections for you</li>
+          <li>Dedicated customer support team</li>
+          <li>Custom reporting and donor communication</li>
+          <li>10% service fee (capped at GH₵50,000)</li>
+        </ul>
+        <i class="btn p-3 text-monospace text-reset"  data-toggle="tooltip" data-placement="right" data-html="true" title="
+        <b><em>T&C</em>: <br> 10% service fee applies to total collections managed by Nsawa Red, capped at GH₵50,000. <br> Includes full-service management, dedicated support, and custom reporting.
+          ">Terms & Conditions Apply</i>
+      </p>
+    </div>
+  </div>
+
+  
+<!-- Comparison Table -->
+  <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+    <div class="comparison-table">
+      <h3 class="text-center mb-4">Choose What's Right for You</h3>
+      <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col" class="text-center">Nova Nsawa Green</th>
+            <th scope="col" class="text-center">Nova Nsawa Red</th>
+          </tr>
+        </thead>
+        <tbody>          
+          <tr>
+            <td>Free platform access <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-html="true" data-placement="right" title="<b>Nova Nsawa</b> account creation is free for all users."></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Cash collection tracking <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-html="true" data-placement="right" title="<b>All</b> cash collections made through the platform are free."></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Mobile money collection <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" data-html="true" title="<b>Nova Nsawa</b><br> platform accepts donations from all mobile networks in Ghana. <br><b>MTN/AirtelTigo/Telecel</b>"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Card transaction support <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" data-html="true" title="<b>Nova Nsawa</b><br> platform supports all types of card transactions. <b>Visa/Debit/Mastercard.</b>"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>QR code generation for easy donations <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" title="Generate QR codes that you can send to your donors for easy donations."></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Digital receipt generation <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" title="SMS receipts only for Green package and both SMS and printed receipts for Red package."></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Live transaction monitoring <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" title="View all donations as they are made in real-time."></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>No fees for cash collections <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" title="Cash collections on the Nova Nsawa platform are completely free."></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Professional team manages collections <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" title="A team of professionals will be at the venue to help with donation collections."></i></td>
+            <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Priority customer support <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" title="Priority support for users of Nova Nsawa Red package."></i></td>
+            <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Custom donor communication <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" title="Custom communication support for users of Nova Nsawa Red package."></i></td>
+            <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Dedicated support team <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" title="A dedicated support team to help you navigate the platform."></i></td>
+            <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td>Customized detailed reporting <i class="fas fa-question-circle text-secondary" data-toggle="tooltip" data-placement="right" title="Available on request for applicable packages."></i></td>
+            <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+            <td class="text-center"><i class="fas fa-check text-success"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+      </div>
+    </section><!-- #packages -->
+    <!--==========================
+      features Section
+    ============================-->
+    <section id="features">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Why Choose Nova Nsawa?</h3>
+          <p>
+            Experience Ghana's most comprehensive and trusted funeral donation management platform with these powerful features.
+          </p>
+        </header>
+
+       <div class="row">
 
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">Management</a></h4>
-            <p class="description"> Managing received donations and users on the Nsawa platform is easy. </p>
+            <div class="icon"><ion-icon name="analytics-outline"></ion-icon></div>
+            <h4 class="title"><a href="">Smart Donation Management</a></h4>
+            <p class="description">Seamlessly collect and track cash, mobile money, and card donations with real-time analytics and transparent reporting.</p>
           </div>
+
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Assistance</a></h4>
-            <p class="description">Nsawa provides options to add user to assist in collection process.</p>
+            <div class="icon"><ion-icon name="qr-code-outline"></ion-icon></div>
+            <h4 class="title"><a href="">Instant QR Code Donations</a></h4>
+            <p class="description">Generate shareable QR codes that make it incredibly easy for sympathizers to donate instantly from their phones.</p>
           </div>
+
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Transparency</a></h4>
-            <p class="description">The Nsawa platform provides essy tracking of all activies on the platform.</p>
+            <div class="icon"><ion-icon name="calendar-outline"></ion-icon></div>
+            <h4 class="title"><a href="">Complete Event Management</a></h4>
+            <p class="description">Create, organize, and manage multiple funeral events with detailed tracking and comprehensive donation oversight.</p>
           </div>
+
+
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="">Performance</a></h4>
+            <div class="icon"><ion-icon name="speedometer-outline"></ion-icon></div>
+            <!-- Changed Title to match description -->
+            <h4 class="title"><a href="">Intuitive Design</a></h4>
             <p class="description">Our platform provides user-friendly intuitive layout that makes managing donations simple. </p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="">Easy Sharing</a></h4>
-            <p class="description">Our platform provides QR Code that can be shared to love ones who want to donate.</p>
+            <div class="icon"><ion-icon name="share-social-outline"></ion-icon></div>
+            <h4 class="title"><a href="">Effortless Sharing</a></h4>
+            <p class="description">Share donation links and QR codes instantly via WhatsApp, SMS, or social media to reach family and friends worldwide.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">Receiving Donation</a></h4>
-            <p class="description">The Nsawa platform provides multiple payment options for donations to be processed. </p>
+            <div class="icon"><ion-icon name="wallet-outline"></ion-icon></div>
+            <!-- Changed Title to match description -->
+            <h4 class="title"><a href="">Flexible Payment Solutions</a></h4>
+            <p class="description">Accept donations through all major Ghanaian mobile money networks, international cards, and traditional cash with full tracking. </p>
           </div>
 
         </div>
 
       </div>
-    </section><!-- #services -->
+    </section><!-- #features -->
 
     <!--==========================
       Call To Action Section
     ============================-->
     <section id="call-to-action" class="wow fadeIn">
       <div class="container text-center">
-        <h3>How To Apply</h3>
-        <p> Contact us for a simple onboarding.</p>
-        <a class="cta-btn icon" href="#contact"><i class="fas fa fa-phone-square"></i> Contact US</a>
+        <h3>Start Using Nova Nsawa Today</h3>
+        <p>Join thousands of Ghanaian families who trust Nova Nsawa for their funeral donation needs. Download our free app now!</p>
+        <a class="cta-btn icon" href="https://play.google.com/store/apps/details?id=your.package.name.here" target="_blank" rel="noopener noreferrer" aria-label="Download my app on Android from the Google Play Store">
+            <ion-icon name="logo-google-playstore"></ion-icon> Google Play
+        </a>
+        <a class="cta-btn icon" href="https://apps.apple.com/us/app/your-app-name/id1234567890" target="_blank" rel="noopener noreferrer" aria-label="Download my app on iOS from the Apple App Store">
+            <ion-icon name="logo-apple"></ion-icon> App Store
+        </a>
       </div>
     </section><!-- #call-to-action -->
 
@@ -744,65 +910,35 @@
         </div>
 
         <div class="form">
-          <EditForm Model="contactForm" OnValidSubmit="HandleContactForm" FormName="ContactForm" role="form" class="contactForm" id="contactForm">
-            <DataAnnotationsValidator />
-    
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <InputText name="name" class="form-control" id="name" placeholder="Your Name" @bind-Value="contactForm.Name" />
-            <div class="validation">
-                <ValidationMessage For="() => contactForm.Name" />
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <EditForm action="" method="post" role="form" class="contactForm" id="contactForm ">
+          <DataAnnotationsValidator />
+          <ValidationSummary />
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <InputText  id="name" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validation"></div>
+              </div>
             </div>
-        </div>
-        <div class="form-group col-md-6">
-            <InputText type="email" class="form-control" name="email" id="email" placeholder="Your Email" @bind-Value="contactForm.Email" />
-            <div class="validation">
-                <ValidationMessage For="() => contactForm.Email" />
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              <div class="validation"></div>
             </div>
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <InputText type="text" class="form-control" name="subject" id="subject" placeholder="Subject" @bind-Value="contactForm.Subject" />
-        <div class="validation">
-            <ValidationMessage For="() => contactForm.Subject" />
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <InputText type="tel" class="form-control" name="phone" id="Phone" placeholder="Phone number +233 0123 456 789" @bind-Value="contactForm.Phone" />
-        <div class="validation">
-            <ValidationMessage For="() => contactForm.Phone" />
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <InputTextArea class="form-control" name="message" rows="5" placeholder="Message" id="message" @bind-Value="contactForm.Message" />
-        <div class="validation">
-            <ValidationMessage For="() => contactForm.Message" />
-        </div>
-    </div>
-    
-    <div class="text-center">
-        <button type="submit" id="submit" disabled="@isSubmitting">
-            @if (isSubmitting)
-            {
-                <span>Sending...</span>
-            }
-            else
-            {
-                <span>Send Message</span>
-            }
-        </button>
-    </div>
-</EditForm>
-
-@if (!string.IsNullOrEmpty(statusMessage))
-{
-    <div class="alert @(isSuccess ? "alert-success" : "alert-danger")" role="alert">
-        @statusMessage
-    </div>
-}
+            <div class="form-group">
+              <input type="tel" class="form-control" name="phone" id="Phone" placeholder="Phone number +233 0123 456 789" data-rule="minlen:10" data-msg="Please enter Your phone number here">
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" id="message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit" id="submit">Send Message</button></div>
+          </EditForm>
         </div>
 
       </div>
@@ -828,11 +964,11 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#about">About us</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#services">Features</a></li>              
+              <li><i class="ion-ios-arrow-right"></i> <a href="#packages">Packages</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#features">Features</a></li>              
               <li><i class="ion-ios-arrow-right"></i> <a href="#contact">Contact</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="terms_of_service.pdf">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="privacy_policy.pdf">Privacy policy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="terms_of_service.html">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="privacypolicy.html">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -852,21 +988,31 @@
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fab fa-google"></i></a>
+              <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
             </div>
 
+          </div>
+          <div class="col-lg-3 col-md-6 footer-info text-center align-items-center">
+            <h4>Get Our App</h4>
+        <!-- <p> Download our app here</p> -->
+        <a class="btn btn-success-outline btn-block" href="https://play.google.com/store/apps/details?id=your.package.name.here" target="_blank" rel="noopener noreferrer" aria-label="Download my app on Android from the Google Play Store">
+            <ion-icon name="logo-google-playstore"></ion-icon> Google Play
+        </a>
+        <a class="btn btn-success-outline btn-block" href="https://apps.apple.com/us/app/your-app-name/id1234567890" target="_blank" rel="noopener noreferrer" aria-label="Download my app on iOS from the Apple App Store">
+            <ion-icon name="logo-apple"></ion-icon> App Store
+        </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container" style="color: #fff;">
-      <div class="copyright">
-        <code ><a href="https://fnfictsolutions.com/" target="_blank">Powered by FnF ICT Solutions</a> </code>
+    <div class="container">
+      <div class="credits">
+        Powere by &nbsp;&nbsp; <a href="https://fnfictsolutions.com/" target="_blank" rel="noopener noreferrer"><img src="images/fnfnlogo.png" title="FnF ICT Solutions" style="width: 70px;" alt="FnF ICT Solutions"/></a>
       </div>
     </div>
   </footer><!-- #footer -->
@@ -885,8 +1031,8 @@
       <div id="whatswidget-conversation-message" class="whatswidget-conversation-message">Have a question? We&#039;re here to help.</div>
 
       <div class="whatswidget-conversation-cta">
-        <a id="whatswidget-phone-desktop" target="_blank" href="https://web.whatsapp.com/send?phone=233548734195" class="whatswidget-cta whatswidget-cta-desktop">Send message</a>
-        <a id="whatswidget-phone-mobile" target="_blank" href="https://wa.me/233548734195" class="whatswidget-cta whatswidget-cta-mobile">Send message</a>
+        <a id="whatswidget-phone-desktop" target="_blank" href="https://web.whatsapp.com/send?phone=233256122024" class="whatswidget-cta whatswidget-cta-desktop">Send message</a>
+        <a id="whatswidget-phone-mobile" target="_blank" href="https://wa.me/233256122024" class="whatswidget-cta whatswidget-cta-mobile">Send message</a>
       </div>
     </div>
 
@@ -1058,58 +1204,3 @@
   </script>
 </div>
 <!-- End WhatsApp Widget -->
-
-
-@* code *@
-@code {
-    [Inject] private EmailService EmailService { get; set; } = default!;
-    
-    private ContactFormModel contactForm = new();
-    private bool isSubmitting = false;
-    private string statusMessage = "";
-    private bool isSuccess = false;
-
-    private async Task HandleContactForm()
-    {
-        isSubmitting = true;
-        statusMessage = "";
-        StateHasChanged(); // Update UI to show "Sending..." button
-        
-        try
-        {
-            await EmailService.SendContactEmailsAsync(contactForm);
-            
-            statusMessage = "Thank you! Your message has been sent successfully.";
-            isSuccess = true;
-            
-            // Reset form
-            contactForm = new ContactFormModel();
-        }
-        catch (Exception ex)
-        {
-            // Log the actual error for debugging (optional)
-            Console.WriteLine($"Email error: {ex.Message}");
-            
-            statusMessage = "Sorry, there was an error sending your message. Please try again.";
-            isSuccess = false;
-        }
-        finally
-        {
-            isSubmitting = false;
-            StateHasChanged(); // Update UI to remove "Sending..." state
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
